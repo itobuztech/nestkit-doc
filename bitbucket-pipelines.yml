@@ -1,0 +1,37 @@
+image: amazonlinux:2
+
+pipelines:
+  default:
+    - step:
+        name: Build and Deploy to S3
+        script:
+          # Install required tools
+          - yum update -y
+          - yum install -y wget tar gzip
+
+          # Install Hugo
+          - wget https://github.com/gohugoio/hugo/releases/download/v0.117.0/hugo_extended_0.117.0_Linux-64bit.tar.gz
+          - tar -zxvf hugo_extended_0.117.0_Linux-64bit.tar.gz
+          - mv hugo /usr/local/bin/hugo
+
+          # Build the Hugo site
+          - hugo --minify
+
+          # Install AWS CLI
+          - yum install -y unzip
+          - curl "https://d1vvhvl2y92vvt.cloudfront.net/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+          - unzip awscliv2.zip
+          - ./aws/install
+
+          # Configure AWS CLI credentials
+          - mkdir -p ~/.aws
+          - echo "[default]" > ~/.aws/credentials
+          - echo "aws_access_key_id = $AWS_ACCESS_KEY_ID" >> ~/.aws/credentials
+          - echo "aws_secret_access_key = $AWS_SECRET_ACCESS_KEY" >> ~/.aws/credentials
+
+          # Deploy to S3
+          - aws s3 rm s3://$S3_BUCKET_NAME --recursive
+          - aws s3 cp public s3://$S3_BUCKET_NAME --recursive
+
+        services:
+          - docker

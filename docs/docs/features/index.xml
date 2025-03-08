@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>NestKit</title><link>https://itobuztech.github.io/docs/features/</link><description>Recent content on NestKit</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://itobuztech.github.io/docs/features/index.xml" rel="self" type="application/rss+xml"/><item><title>Authentication</title><link>https://itobuztech.github.io/docs/features/auth/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://itobuztech.github.io/docs/features/auth/</guid><description>&lt;h1 id="authentication">
+ Authentication
+ &lt;a class="anchor" href="#authentication">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="auth-features-included">
+ Auth Features Included
+ &lt;a class="anchor" href="#auth-features-included">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>Login&lt;/li>
+&lt;li>Forget password&lt;/li>
+&lt;li>Change password&lt;/li>
+&lt;li>Register User&lt;/li>
+&lt;li>Verify Sign up with Email&lt;/li>
+&lt;li>Account lockout if wrong password attempt certain times&lt;/li>
+&lt;li>Two factor auth can be configured with email&lt;/li>
+&lt;li>JWT token verification with refresh token&lt;/li>
+&lt;/ul>
+&lt;h2 id="roles">
+ Roles
+ &lt;a class="anchor" href="#roles">#&lt;/a>
+&lt;/h2>
+&lt;p>Application has three types of user roles&lt;/p>
+&lt;ul>
+&lt;li>Super Admin&lt;/li>
+&lt;li>Workspace Admin&lt;/li>
+&lt;li>User&lt;/li>
+&lt;/ul>
+&lt;p>Additionally custom role can be created by super admin, workspace admin and who have role privileges.&lt;/p></description></item><item><title>Workspace</title><link>https://itobuztech.github.io/docs/features/workspace/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://itobuztech.github.io/docs/features/workspace/</guid><description>&lt;h1 id="workspace">
+ Workspace
+ &lt;a class="anchor" href="#workspace">#&lt;/a>
+&lt;/h1>
+&lt;p>Workspace features are implemented to support multi-tenancy architecture, which allows a single instance of the application to serve multiple clients (tenants). Each workspace represents a separate tenant environment where client-specific data is stored and managed in isolation.&lt;/p>
+&lt;h2 id="multi-tenancy-implementation">
+ Multi-Tenancy Implementation
+ &lt;a class="anchor" href="#multi-tenancy-implementation">#&lt;/a>
+&lt;/h2>
+&lt;p>Workspaces provide clear boundaries between different clients&amp;rsquo; data, ensuring that:&lt;/p>
+&lt;ul>
+&lt;li>Data from one client is never exposed to another client&lt;/li>
+&lt;li>Each client operates in their own isolated environment&lt;/li>
+&lt;li>Resources and configurations can be customized per workspace&lt;/li>
+&lt;/ul>
+&lt;h2 id="data-segregation">
+ Data Segregation
+ &lt;a class="anchor" href="#data-segregation">#&lt;/a>
+&lt;/h2>
+&lt;p>The workspace model ensures complete segregation of client data by:&lt;/p></description></item><item><title>CMS</title><link>https://itobuztech.github.io/docs/features/cms/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://itobuztech.github.io/docs/features/cms/</guid><description>&lt;p>In this application CMS like features can be found in post module.&lt;/p>
+&lt;h2 id="available-features">
+ Available Features
+ &lt;a class="anchor" href="#available-features">#&lt;/a>
+&lt;/h2>
+&lt;h3 id="pagination">
+ Pagination
+ &lt;a class="anchor" href="#pagination">#&lt;/a>
+&lt;/h3>
+&lt;p>The post module includes pagination capabilities that allow you to:&lt;/p>
+&lt;ul>
+&lt;li>Limit the number of posts per page&lt;/li>
+&lt;li>Navigate between pages&lt;/li>
+&lt;li>View total count of available posts&lt;/li>
+&lt;/ul>
+&lt;h3 id="search-and-filtering">
+ Search and Filtering
+ &lt;a class="anchor" href="#search-and-filtering">#&lt;/a>
+&lt;/h3>
+&lt;p>Advanced search functionality has been implemented to help you find posts by:&lt;/p>
+&lt;ul>
+&lt;li>Keywords in title or content&lt;/li>
+&lt;li>Author&lt;/li>
+&lt;li>Publication date&lt;/li>
+&lt;li>Categories and tags&lt;/li>
+&lt;/ul>
+&lt;p>The filtering system allows you to refine post lists based on various parameters and attributes.&lt;/p></description></item><item><title>File manger</title><link>https://itobuztech.github.io/docs/features/file-manager/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://itobuztech.github.io/docs/features/file-manager/</guid><description>&lt;h1 id="file-manager">
+ File Manager
+ &lt;a class="anchor" href="#file-manager">#&lt;/a>
+&lt;/h1>
+&lt;p>The File Manager module provides a complete solution for handling files in your application with the following features:&lt;/p>
+&lt;h2 id="core-features">
+ Core Features
+ &lt;a class="anchor" href="#core-features">#&lt;/a>
+&lt;/h2>
+&lt;h3 id="crud-operations">
+ CRUD Operations
+ &lt;a class="anchor" href="#crud-operations">#&lt;/a>
+&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Create&lt;/strong>: Upload new files with validation&lt;/li>
+&lt;li>&lt;strong>Read&lt;/strong>: Retrieve files with filtering options&lt;/li>
+&lt;li>&lt;strong>Update&lt;/strong>: Replace or modify existing files&lt;/li>
+&lt;li>&lt;strong>Delete&lt;/strong>: Remove files and related metadata&lt;/li>
+&lt;/ul>
+&lt;h3 id="image-processing">
+ Image Processing
+ &lt;a class="anchor" href="#image-processing">#&lt;/a>
+&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Resize&lt;/strong>: Automatically resize images to predefined dimensions&lt;/li>
+&lt;li>&lt;strong>Crop&lt;/strong>: Crop images with customizable options&lt;/li>
+&lt;li>&lt;strong>Format Conversion&lt;/strong>: Convert between different image formats&lt;/li>
+&lt;/ul>
+&lt;h2 id="storage-options">
+ Storage Options
+ &lt;a class="anchor" href="#storage-options">#&lt;/a>
+&lt;/h2>
+&lt;h3 id="local-storage">
+ Local Storage
+ &lt;a class="anchor" href="#local-storage">#&lt;/a>
+&lt;/h3>
+&lt;p>Files can be stored locally in the server filesystem with configurable paths.&lt;/p></description></item><item><title>Rate Limit</title><link>https://itobuztech.github.io/docs/features/rate-limit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://itobuztech.github.io/docs/features/rate-limit/</guid><description>&lt;h1 id="rate-limit">
+ Rate Limit
+ &lt;a class="anchor" href="#rate-limit">#&lt;/a>
+&lt;/h1>
+&lt;p>Rate limit implemented by Nest Js ThrottlerModule&lt;/p>
+&lt;h2 id="implementation">
+ Implementation
+ &lt;a class="anchor" href="#implementation">#&lt;/a>
+&lt;/h2>
+&lt;p>Rate limiting has been implemented throughout the application to enhance security and prevent brute force attacks. By limiting the number of requests a client can make within a specific time period, the system effectively prevents:&lt;/p>
+&lt;ul>
+&lt;li>Brute force attacks on authentication endpoints&lt;/li>
+&lt;li>API abuse and scraping attempts&lt;/li>
+&lt;li>Denial of Service (DoS) attacks&lt;/li>
+&lt;li>Excessive resource consumption&lt;/li>
+&lt;/ul>
+&lt;h2 id="configuration">
+ Configuration
+ &lt;a class="anchor" href="#configuration">#&lt;/a>
+&lt;/h2>
+&lt;p>The rate limiting is applied globally and can be customized per route as needed.&lt;/p></description></item><item><title>Data Seed</title><link>https://itobuztech.github.io/docs/features/seed/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://itobuztech.github.io/docs/features/seed/</guid><description>&lt;h1 id="db-seed">
+ DB Seed
+ &lt;a class="anchor" href="#db-seed">#&lt;/a>
+&lt;/h1>
+&lt;p>The DB seed feature provides a way to populate your database with essential test data. This ensures your application runs smoothly from the first startup with minimal required data.&lt;/p>
+&lt;h2 id="overview">
+ Overview
+ &lt;a class="anchor" href="#overview">#&lt;/a>
+&lt;/h2>
+&lt;p>Database seeding is a crucial part of application development and testing. Our seed functionality:&lt;/p>
+&lt;ul>
+&lt;li>Creates initial admin users&lt;/li>
+&lt;li>Populates lookup tables with common values&lt;/li>
+&lt;li>Sets up required configuration data&lt;/li>
+&lt;li>Provides sample data for development and testing&lt;/li>
+&lt;/ul>
+&lt;h2 id="running-seeds">
+ Running Seeds
+ &lt;a class="anchor" href="#running-seeds">#&lt;/a>
+&lt;/h2>
+&lt;p>Seeds can be executed using the following command:&lt;/p></description></item></channel></rss>

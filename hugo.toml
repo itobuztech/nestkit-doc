@@ -1,0 +1,16 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'NestKit'
+theme = "hugo-book"
+relativeURLs = true
+canonifyURLs = true
+
+
+[author]
+  name = "Prosenjit Manna"
+  homepage = "https://github.com/prosenjit-manna/"
+
+      
+[markup.goldmark.renderer]
+  unsafe = true
+
